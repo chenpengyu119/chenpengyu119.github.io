@@ -19,20 +19,49 @@
 # in the templates via {{ site.myvariable }}.
 
 title: 小宇的博客
+brief-intro: Java Coder
 email: pengyuchen119.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://chenpengyu119.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:year/:month/:day/:title/
+
 twitter_username: jekyllrb
 github_username:  chenpengyu119
 
+description_footer: 来自小宇的个人专栏！
+
+
+#comments插件
+disqus_shortname: #oneBigComos
+
+# statistic analysis 统计代码
+
+
+
 # Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+category_dir: category/
+tag_dir: tag/
+
+# excerpt
+excerpt_separator: "\n\n\n\n"
+
+# paginate
+plugins: [jekyll-paginate]
+paginate: 6
+port: 4000
+
 theme: minima
-plugins:
-  - jekyll-feed
+# plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
